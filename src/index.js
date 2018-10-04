@@ -216,7 +216,7 @@ class RouterImpl extends React.PureComponent {
       let FocusWrapper = primary ? FocusHandler : component;
       // don't pass any props to 'div'
       let wrapperProps = primary
-        ? { uri, location, component, ...domProps }
+        ? { uri, location, component, routes, ...domProps }
         : domProps;
 
       return (
